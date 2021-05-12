@@ -10,7 +10,7 @@ Update an index using a local definition file:
 
 ```yaml
 - name: Update index
-  uses: heyitsmemark/update-azure-search-index@main
+  uses: heyitsmemark/update-azure-search-index@1.0.0
   with:
     azureSearchInstance: plop
     azureSearchAdminKey: ${{ secrets.AZURE_SEARCH_ADMIN_KEY }}
@@ -22,7 +22,7 @@ Update an index using a remote definition file:
 
 ```yaml
 - name: Update index 
-  uses: heyitsmemark/update-azure-search-index@main
+  uses: heyitsmemark/update-azure-search-index@1.0.0
   with:
     azureSearchInstance: plop
     azureSearchAdminKey: ${{ secrets.AZURE_SEARCH_ADMIN_KEY }}

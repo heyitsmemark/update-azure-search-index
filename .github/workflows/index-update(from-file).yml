@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: heyitsmemark/update-azure-search-index@main
+      - uses: heyitsmemark/update-azure-search-index@1.0.0
         with:
           azureSearchInstance: plop
           azureSearchAdminKey: ${{ secrets.AZURE_SEARCH_ADMIN_KEY }}
