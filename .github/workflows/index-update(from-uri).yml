@@ -12,5 +12,5 @@ jobs:
         with:
           azureSearchInstance: plop
           azureSearchAdminKey: ${{ secrets.AZURE_SEARCH_ADMIN_KEY }}
-          indexName: index-plop
+          indexName: plop
           indexDefinitionUri: https://plopstorage.blob.core.windows.net/public/index.json
