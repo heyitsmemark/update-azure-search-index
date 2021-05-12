@@ -1,0 +1,54 @@
+{
+    "name": "plop",
+    "fields": [
+        {
+            "name": "id",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": true,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false,
+            "analyzer": null,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "synonymMaps": [],
+            "fields": []
+        },
+        {
+            "name": "title",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": true,
+            "sortable": false,
+            "analyzer": "standard.lucene",
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "synonymMaps": [],
+            "fields": []
+        }
+    ],
+    "suggesters": [
+        {
+            "name": "full",
+            "searchMode": "analyzingInfixMatching",
+            "sourceFields": [
+                "title"
+            ]
+        }
+    ],
+    "analyzers": [],
+    "charFilters": [],
+    "tokenFilters": [],
+    "tokenizers": [],
+    "similarity": {
+        "@odata.type": "#Microsoft.Azure.Search.BM25Similarity",
+        "k1": null,
+        "b": null
+    },
+    "encryptionKey": null
+}

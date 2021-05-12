@@ -1,0 +1,16 @@
+name: index-update-from-uri
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: heyitsmemark/update-azure-search-index@main
+        with:
+          azureSearchInstance: plop
+          azureSearchAdminKey: ${{ secrets.AZURE_SEARCH_ADMIN_KEY }}
+          indexName: index-plop
+          indexDefinitionUri: https://plopstorage.blob.core.windows.net/public/index.json
